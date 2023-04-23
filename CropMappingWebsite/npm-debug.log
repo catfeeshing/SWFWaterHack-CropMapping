@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData @cubejs-client/core
+20 silly mapToRegistry name @cubejs-client/core
+21 silly mapToRegistry scope (from package name) @cubejs-client
+22 verbose mapToRegistry no registry URL found in name for scope @cubejs-client
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry uri https://registry.npmjs.org/@cubejs-client%2fcore
+26 silly fetchNamedPackageData chart.js
+27 silly mapToRegistry name chart.js
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/chart.js
+31 verbose request uri https://registry.npmjs.org/@cubejs-client%2fcore
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 3:40:11 AM
+34 verbose request id 3acf77c4abbbe0cb
+35 http request GET https://registry.npmjs.org/@cubejs-client%2fcore
+36 verbose request uri https://registry.npmjs.org/chart.js
+37 verbose request no auth needed
+38 info attempt registry request try #1 at 3:40:11 AM
+39 http request GET https://registry.npmjs.org/chart.js
+40 http 200 https://registry.npmjs.org/chart.js
+41 verbose headers { date: 'Sun, 23 Apr 2023 10:40:11 GMT',
+41 verbose headers   'content-type': 'application/json',
+41 verbose headers   'transfer-encoding': 'chunked',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'cf-ray': '7bc57ca97a9615c6-SJC',
+41 verbose headers   'access-control-allow-origin': '*',
+41 verbose headers   'cache-control': 'public, max-age=300',
+41 verbose headers   etag: 'W/"a014d8614b3a24fe428a103df89d1354"',
+41 verbose headers   'last-modified': 'Fri, 10 Feb 2023 06:50:32 GMT',
+41 verbose headers   vary: 'accept-encoding, accept',
+41 verbose headers   'cf-cache-status': 'REVALIDATED',
+41 verbose headers   'x-amz-replication-status': 'COMPLETED',
+41 verbose headers   'x-amz-server-side-encryption': 'AES256',
+41 verbose headers   server: 'cloudflare',
+41 verbose headers   'content-encoding': 'gzip' }
+42 silly get cb [ 200,
+42 silly get   { date: 'Sun, 23 Apr 2023 10:40:11 GMT',
+42 silly get     'content-type': 'application/json',
+42 silly get     'transfer-encoding': 'chunked',
+42 silly get     connection: 'keep-alive',
+42 silly get     'cf-ray': '7bc57ca97a9615c6-SJC',
+42 silly get     'access-control-allow-origin': '*',
+42 silly get     'cache-control': 'public, max-age=300',
+42 silly get     etag: 'W/"a014d8614b3a24fe428a103df89d1354"',
+42 silly get     'last-modified': 'Fri, 10 Feb 2023 06:50:32 GMT',
+42 silly get     vary: 'accept-encoding, accept',
+42 silly get     'cf-cache-status': 'REVALIDATED',
+42 silly get     'x-amz-replication-status': 'COMPLETED',
+42 silly get     'x-amz-server-side-encryption': 'AES256',
+42 silly get     server: 'cloudflare',
+42 silly get     'content-encoding': 'gzip' } ]
+43 verbose get saving chart.js to /home/joshua/.npm/registry.npmjs.org/chart.js/.cache.json
+44 verbose stack Error: Missing required argument #1
+44 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+44 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+44 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+44 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+44 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+44 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+44 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+44 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+44 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+44 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+45 verbose cwd /mnt/c/Users/JOSHU/OneDrive/Documents/Projects/SWF Hackathon/CropMapping
+46 error Linux 5.10.16.3-microsoft-standard-WSL2
+47 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+48 error node v8.10.0
+49 error npm  v3.5.2
+50 error code EMISSINGARG
+51 error typeerror Error: Missing required argument #1
+51 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+51 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+51 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+51 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+51 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+51 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+51 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+51 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+51 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+51 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+52 error typeerror This is an error with npm itself. Please report this error at:
+52 error typeerror     <http://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" crossorigin="">
+    <link rel="stylesheet" href="/index.2cdaf7bc.css">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" crossorigin=""></script>
+    <title>Crop Identifier</title>
+  </head>
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="https://unpkg.com/esri-leaflet@3.0.10/dist/esri-leaflet.js"></script>
+
+  <!-- Load Esri Leaflet Vector from CDN -->
+  <script src="https://unpkg.com/esri-leaflet-vector@4.0.1/dist/esri-leaflet-vector.js" crossorigin=""></script>
+  <style>html, body, #map {
+  height: 75%;
+  width: 100%;
+  color: #323232;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+</style>
+  <body class="bg-blue-400">
+    <h1 class="text-center text-white pt-5 text-[40px] font-bold  box-border h-25 pb-8 bg-blue-600">Crop Identifier</h1>
+    <div class="flex flex-row bg-blue-200">
+        <div style="width: 500px; height: 300px"><canvas id="acquisitions" class="bg-white"></canvas></div>
+        <div style="width: 400px; height: 200px"><canvas id="extraData" class="bg-white"></canvas></div>
+        <div style="width: 400px; height: 200px"><canvas id="moreData" class="bg-white relative left-[230px]"></canvas></div>
+    </div>
+
+    <!-- <script type="module" src="dimensions.js"></script> -->
+    <div id="map"></div>
+    <script src="https://unpkg.com/esri-leaflet@3.0.10/dist/esri-leaflet.js" integrity="sha512-oUArlxr7VpoY7f/dd3ZdUL7FGOvS79nXVVQhxlg6ij4Fhdc4QID43LUFRs7abwHNJ0EYWijiN5LP2ZRR2PY4hQ==" crossorigin=""></script>
+
+    <script src="https://unpkg.com/esri-leaflet-vector@4.0.1/dist/esri-leaflet-vector.js" integrity="sha512-7rLAors9em7cR3/583gZSvu1mxwPBUjWjdFJ000pc4Wpu+fq84lXF1l4dbG4ShiPQ4pSBUTb4e9xaO6xtMZIlA==" crossorigin=""></script>
+    <div id="Map" class=""></div>
+    <script src="/index.0a57cef4.js"></script>
+    <script src="/index.a521242b.js" defer=""></script>-
+  </body>
+</html>
