@@ -32,9 +32,21 @@ To run the model, run the following command in the terminal:
 
 ## Results
 
-We achieved an accuracy of 50-54% on our model and discovered ET and Surface Downwelling Shortwave Flux in Air (srad) were the biggest factors in determining the crop contained in each field.
+We achieved an accuracy of 50-54% on our model, with an average recall of 53%. We also discovered ET and Surface Downwelling Shortwave Flux in Air (srad) were the biggest factors in determining the crop contained in each field.
 
-Our model struggled significantly with determining where young perennials (YP) were planted; this category of plants tended to have the lowest accuracy.
+Sample results:
+
+![sample results](https://media.discordapp.net/attachments/1099156880607170671/1099756060287443096/image.png?width=626&height=416)
+
+Importance of each variable:
+
+![Feature importances](https://media.discordapp.net/attachments/1099156880607170671/1099756060052553849/image.png?width=881&height=625)
+
+Scatterplot:
+
+![Scatterplot](https://media.discordapp.net/attachments/1099156880607170671/1099760399378817064/Figure_1.png?width=800&height=600)
+
+Our model struggled significantly with determining where young perennials (YP) were planted; this category of plants tended to have the lowest accuracy. These results were outliers and tended to bring all the averages down.
 
 ## Future Improvements
 
