@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 path = '.'
-out_file = 'combined_data.csv'
+out_file = 'combined_dataBoth.csv'
 
 # get list of csv files in path
 file_list = [f for f in os.listdir(path) if f.endswith('.csv')]
