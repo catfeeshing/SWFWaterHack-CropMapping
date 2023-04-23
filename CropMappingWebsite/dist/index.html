@@ -24,11 +24,11 @@
 
 </style>
   <body class="bg-blue-400">
-    <h1 class="text-center text-white pt-5 text-[40px] font-bold  box-border h-25 pb-8 bg-blue-600">Crop Identifier</h1>
-    <div class="flex flex-row bg-blue-200">
-        <div style="width: 500px; height: 300px"><canvas id="acquisitions" class="bg-white"></canvas></div>
-        <div style="width: 400px; height: 200px"><canvas id="extraData" class="bg-white"></canvas></div>
-        <div style="width: 400px; height: 200px"><canvas id="moreData" class="bg-white relative left-[230px]"></canvas></div>
+    <h1 class="text-center text-white pt-5 text-[40px] font-bold  box-border h-25 pb-8 bg-gradient-to-r from-blue-300 via-blue-500 to-blue-300">Crop Identifier</h1>
+    <div class="z-10 relative flex flex-row bg-blue-400">
+        <div style="width: 350px; height: 200px"><canvas id="extraData" class="bg-white relative left-[100px] rounded-xl"></canvas></div>
+        <div style="width: 400px; height: 300px"><canvas id="acquisitions" class="bg-white relative left-[300px] rounded-xl "></canvas></div>
+        <div style="width: 350px; height: 200px"><canvas id="moreData" class="bg-white relative left-[380px] rounded-xl "></canvas></div>
     </div>
 
     <!-- <script type="module" src="dimensions.js"></script> -->
@@ -36,8 +36,9 @@
     <script src="https://unpkg.com/esri-leaflet@3.0.10/dist/esri-leaflet.js" integrity="sha512-oUArlxr7VpoY7f/dd3ZdUL7FGOvS79nXVVQhxlg6ij4Fhdc4QID43LUFRs7abwHNJ0EYWijiN5LP2ZRR2PY4hQ==" crossorigin=""></script>
 
     <script src="https://unpkg.com/esri-leaflet-vector@4.0.1/dist/esri-leaflet-vector.js" integrity="sha512-7rLAors9em7cR3/583gZSvu1mxwPBUjWjdFJ000pc4Wpu+fq84lXF1l4dbG4ShiPQ4pSBUTb4e9xaO6xtMZIlA==" crossorigin=""></script>
-    <div id="Map" class=""></div>
+    <br>
+    <div id="Map" class="relative top-[100px]"></div>
     <script src="/index.0a57cef4.js"></script>
-    <script src="/index.a521242b.js" defer=""></script>-
+    <script src="/index.a521242b.js" defer=""></script>
   </body>
 </html>

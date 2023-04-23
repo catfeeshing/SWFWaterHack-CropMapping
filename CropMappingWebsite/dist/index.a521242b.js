@@ -560,45 +560,117 @@ function hmrAccept(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _auto = require("chart.js/auto");
 var _autoDefault = parcelHelpers.interopDefault(_auto);
+const totalTypeNumber = [
+    {
+        type: "Field X",
+        count: 10
+    },
+    {
+        type: "Field P",
+        count: 20
+    },
+    {
+        type: "Field G",
+        count: 15
+    },
+    {
+        type: "Field T",
+        count: 25
+    },
+    {
+        type: "Field C",
+        count: 22
+    },
+    {
+        type: "Field D",
+        count: 30
+    },
+    {
+        type: "Field V",
+        count: 28
+    },
+    {
+        type: "Field YP",
+        count: 28
+    }
+];
+const srandValues = [
+    {
+        type: "Field X",
+        count: 10
+    },
+    {
+        type: "Field P",
+        count: 20
+    },
+    {
+        type: "Field G",
+        count: 15
+    },
+    {
+        type: "Field T",
+        count: 25
+    },
+    {
+        type: "Field C",
+        count: 22
+    },
+    {
+        type: "Field D",
+        count: 30
+    },
+    {
+        type: "Field V",
+        count: 28
+    },
+    {
+        type: "Field YP",
+        count: 28
+    }
+];
 (async function() {
-    const data = [
+    const etValues = [
         {
-            year: "Field X",
+            type: "Field X",
             count: 10
         },
         {
-            year: "Field P",
+            type: "Field P",
             count: 20
         },
         {
-            year: "Field G",
+            type: "Field G",
             count: 15
         },
         {
-            year: "Field T",
+            type: "Field T",
             count: 25
         },
         {
-            year: "Field C",
+            type: "Field C",
             count: 22
         },
         {
-            year: "Field D",
+            type: "Field D",
             count: 30
         },
         {
-            year: "Field V",
+            type: "Field V",
+            count: 28
+        },
+        {
+            type: "Field YP",
             count: 28
         }
     ];
     new (0, _autoDefault.default)(document.getElementById("acquisitions"), {
         type: "pie",
         data: {
-            labels: data.map((row)=>row.year),
+            labels: totalTypeNumber.map((row)=>row.type),
             datasets: [
                 {
-                    label: "Acquisitions by year",
-                    data: data.map((row)=>row.count)
+                    label: "Total #of Crops per Field Type",
+                    data: totalTypeNumber.map((row)=>row.count)
                 }
             ]
         }
@@ -606,23 +678,23 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
     new (0, _autoDefault.default)(document.getElementById("extraData"), {
         type: "bar",
         data: {
-            labels: data.map((row)=>row.year),
+            labels: etValues.map((row)=>row.type),
             datasets: [
                 {
-                    label: "Acquisitions by year",
-                    data: data.map((row)=>row.count)
+                    label: "ET Value Averages Per type",
+                    data: etValues.map((row)=>row.count)
                 }
             ]
         }
     });
     new (0, _autoDefault.default)(document.getElementById("moreData"), {
-        type: "scatter",
+        type: "bar",
         data: {
-            labels: data.map((row)=>row.year),
+            labels: srandValues.map((row)=>row.type),
             datasets: [
                 {
-                    label: "Acquisitions by year",
-                    data: data.map((row)=>row.count)
+                    label: "sRand Averages Per Field Type",
+                    data: srandValues.map((row)=>row.count)
                 }
             ]
         }

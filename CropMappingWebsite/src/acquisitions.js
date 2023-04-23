@@ -1,26 +1,49 @@
 import Chart from 'chart.js/auto'
+const totalTypeNumber = [
+  { type: "Field X", count: 10 },
+  { type: "Field P", count: 20 },
+  { type: "Field G", count: 15 },
+  { type: "Field T", count: 25 },
+  { type: "Field C", count: 22 },
+  { type: "Field D", count: 30 },
+  { type: "Field V", count: 28 },
+  { type: "Field YP", count: 28 },
+];
+
+const srandValues = [
+  { type: "Field X", count: 10 },
+  { type: "Field P", count: 20 },
+  { type: "Field G", count: 15 },
+  { type: "Field T", count: 25 },
+  { type: "Field C", count: 22 },
+  { type: "Field D", count: 30 },
+  { type: "Field V", count: 28 },
+  { type: "Field YP", count: 28 },
+];
 
 (async function() {
-  const data = [
-    { year: "Field X", count: 10 },
-    { year: "Field P", count: 20 },
-    { year: "Field G", count: 15 },
-    { year: "Field T", count: 25 },
-    { year: "Field C", count: 22 },
-    { year: "Field D", count: 30 },
-    { year: "Field V", count: 28 },
+  const etValues = [
+    { type: "Field X", count: 10 },
+    { type: "Field P", count: 20 },
+    { type: "Field G", count: 15 },
+    { type: "Field T", count: 25 },
+    { type: "Field C", count: 22 },
+    { type: "Field D", count: 30 },
+    { type: "Field V", count: 28 },
+    { type: "Field YP", count: 28 },
   ];
+
 
   new Chart(
     document.getElementById('acquisitions'),
     {
       type: 'pie',
       data: {
-        labels: data.map(row => row.year),
+        labels: totalTypeNumber.map(row => row.type),
         datasets: [
           {
-            label: 'Acquisitions by year',
-            data: data.map(row => row.count)
+            label: 'Total #of Crops per Field Type',
+            data: totalTypeNumber.map(row => row.count),
           }
         ]
       }
@@ -33,11 +56,11 @@ import Chart from 'chart.js/auto'
     {
       type: 'bar',
       data: {
-        labels: data.map(row => row.year),
+        labels: etValues.map(row => row.type),
         datasets: [
           {
-            label: 'Acquisitions by year',
-            data: data.map(row => row.count)
+            label: 'ET Value Averages Per type',
+            data: etValues.map(row => row.count)
           }
         ]
       }
@@ -47,13 +70,13 @@ import Chart from 'chart.js/auto'
   new Chart(
     document.getElementById('moreData'),
     {
-      type: 'scatter',
+      type: 'bar',
       data: {
-        labels: data.map(row => row.year),
+        labels: srandValues.map(row => row.type),
         datasets: [
           {
-            label: 'Acquisitions by year',
-            data: data.map(row => row.count), 
+            label: 'sRand Averages Per Field Type',
+            data: srandValues.map(row => row.count)
           }
         ]
       }
