@@ -58,5 +58,5 @@ A complete solution would consist of a more comprehensive site that includes mor
 
 ## Resources
 
-* [ArcGIS Online Interactive Map](https://www.arcgis.com/home/item.html?id=7a0a5b5d089b4fde8eae106f495906c6)
+* <a href="https://www.arcgis.com/home/item.html?id=7a0a5b5d089b4fde8eae106f495906c6" target="_blank">ArcGIS Online Interactive Map</a>
 * [Slideshow](https://docs.google.com/presentation/d/1qvFzjBrlVxAdcrutZ4Sz9cOp1wOMiHDqi7clqqaK5u8/edit?usp=sharing)
