@@ -4,7 +4,7 @@ By Carolyn Cui, Luis Fujarte, Yulin Lin, Ryan Milstrey, Joshua Tapia
 
 ---
 
-Our project predicts crops based on evapotransporation data and multiple additional environmental parameters. Trained on data from 100,000 fields in California's Central Valley, we can determine what type of crop is planted in a field, from six different categories and with just over 50% accuracy.
+Our project predicts crops based on evapotransporation data and multiple additional environmental parameters. Trained on data from 100,000 fields in California's Central Valley, we can determine what type of crop is planted in a field, from nine different categories and with just over 50% accuracy.
 
 ## Problem Statement
 
@@ -14,19 +14,18 @@ Determining what crops are planted in a field through remote methods could be an
 
 ## Our Approach
 
-A basic solution to determining crops in a field is simply asking the farmers, but considering the sheer amount of farmers in the Central Valley, this is impractical.
-
-We can instead extract data from satellite images, which in turn provide us with valuable information on the variables that can help determine the crops in a field.
+We were provided with mostly preprocessed data extracted from raster satellite images.
 
 Evapotranspiration is one such variable and, in short, is the combination of evaporation from ground soil and the transpiration from plants.
 
 We aimed to develop an understanding of how evapotranspiration correlates to crops and then apply that to crop identification.
 
-Our plan was to run 2018 and 2019 mean ET data extracted through rasters in a machine learning model, then have it predict 2020 crops in farming fields given incomplete data. predictions, and create an interactive map through ArcGIS Pro exported to ArcGIS Online or Leaflet.
+We had three main steps in our approach: data analysis and processing, model development/training, and presentation.
+Starting with data analysis, we would run 2018 and 2019 mean ET data extracted through rasters in a machine learning model, then have it predict 2020 crops in farming fields given incomplete data. Then, we could integrate those predictions into an interactive map exported to ArcGIS Online or Leaflet.
 
 The map would display 3 years of data: 2018, 2019, and 2020. 2018 and 2019 would display the given data, while 2020 would draw data from our predictions. Anyone browsing the map would be able to browse across multiple years, and in each year, select a field and see information about the field. This information would include the crop planted in the field, the size of the field, and basic evapotranspiration data.
 
-We decided to use a random forest model, which is good at classification.
+We determined a random forest model to be most fitting for our scenario, as it could help not only with classification, but with determining the most important factors in categorizing the crops.
 
 ## Running the Model
 
