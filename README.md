@@ -1,12 +1,16 @@
-# SWFWaterHack: Crop Mapping
+# SWFWaterHack: Predicting Crops from Rasterized Satellite Evaportranspiration Data with Random Forest, and Visualization using ArcGIS
 
-A project that predicts crops based on evapotransporation parameters.
+By Carolyn Cui, Luis Fujarte, Yulin Lin, Ryan Milstrey, Joshua Tapia
+
+---
+
+Our project predicts crops based on evapotransporation data and multiple additional environmental parameters. Trained on data from 100,000 fields in California's Central Valley, we can determine what type of crop is planted in a field, from six different categories and with just over 50% accuracy.
 
 ## Problem Statement
 
-Water management continues to be an issue in California, especially in the Central Valley and during periods of heavy rain.
+Water management is a persistent issue in California, and one that continues to grow with climate change, as we adapt to dealing with more unpredictable weather patterns and prolonged periods of drought. The problem becomes more pertinent in the Central Valley and during periods of heavy rain. The Central Valley's water demand is high due to farming, while heavy rain sometimes brings too much water, too soon.
 
-Determining what crops are planted in a field through remote methods could be an effective way to understand where resources can be diverted for better farming practices. Then, how can we combine modern tools with these datasets to assist in water management?
+Determining what crops are planted in a field through remote methods could be an effective way to understand where resources can be diverted for better farming practices. Thus, we aimed to identify a potential solution that combines these datasets with modern tools.
 
 ## Our Approach
 
