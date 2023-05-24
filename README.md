@@ -1,4 +1,4 @@
-# SWFWaterHack: Predicting Crops from Rasterized Satellite Evaportranspiration Data with Random Forest, and Visualization using ArcGIS
+# SWFWaterHack: Predicting Crops from Rasterized Satellite Evapotranspiration Data with Random Forest, and Visualization using ArcGIS
 
 By Carolyn Cui, Luis Fujarte, Yulin Lin, Ryan Milstrey, Joshua Tapia
 
